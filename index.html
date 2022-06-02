@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint Clone</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+
+    <header class="toolbar">
+      <div class="container" title="Brush Size">
+        <i class="fa fa-paint-brush brush" id="brushIcon"></i>
+        <input
+          type="range"
+          min="5"
+          max="50"
+          value="10"
+          id="brushSize"
+          class="brushSize"
+        />
+      </div>
+      <div class="container" title="Brush Color">
+        <i class="fa fa-brush"></i>
+        <input
+          class="brush__color"
+          id="brushColor"
+          value="#04aa6d"
+          data-jscolor="{}"
+        />
+      </div>
+      <div class="container" title="Background Color">
+        <i class="fas fa-fill-drip" style="color: #333"></i>
+        <input
+          class="color"
+          id="backgroundColor"
+          value="#333"
+          data-jscolor="{}"
+        />
+      </div>
+      <div class="container">
+        <i
+          class="fas fa-eraser"
+          id="eraserIcon"
+          title="Eraser"
+          style="color: #40aa6d"
+        ></i>
+        <input
+          type="range"
+          min="5"
+          max="50"
+          value="10"
+          id="eraser"
+          class="brushSize"
+        />
+      </div>
+    </header>
+    <button id="clearCanvas" class="clearCanvas">Clear Canvas</button>
+    <main id="canvas__container"></main>
+    <footer class="footer">created by <a href="#">Ayushmaan Rajput</a></footer>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.8/jscolor.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
